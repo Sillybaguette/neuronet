@@ -22,4 +22,5 @@ project-root/
 │   └── package.json
 │
 ├── render.yaml               # Für Deployment auf Render
-└── requirements.txt          # Für Backend-Dependencies
+├── requirements.txt          # Für Backend-Dependencies
+└── .gitignore                # Ignorierte Dateien für Git
