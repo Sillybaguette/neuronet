@@ -1,0 +1,25 @@
+project-root/
+│
+├── backend/
+│   ├── main.py               # Startpunkt mit FastAPI-Router
+│   ├── api/
+│   │   ├── routes.py         # Alle Endpoints (z.B. /upload, /evaluate)
+│   │   └── schemas.py        # Pydantic Models für Requests/Responses
+│   ├── core/
+│   │   ├── parser.py         # PDF analysieren → JSON Info
+│   │   ├── interpreter.py    # Logik: Command + Bedingungen → Bewertung
+│   │   ├── chat_ai.py        # Kommunikation mit OpenAI + Promptformatierung
+│   │   └── utils.py          # Hilfsfunktionen (z. B. Logging, Filehandling)
+│   └── tests/                # Unit-Tests
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/       # UI-Komponenten (CommandBox, Bewertungsanzeige, etc.)
+│   │   ├── views/            # Hauptansichten: Upload, Bewertung, Chat
+│   │   ├── services/         # API-Calls
+│   │   └── App.tsx           # App-Einstieg
+│   └── package.json
+│
+├── render.yaml               # Für Deployment auf Render
+└── requirements.txt          # Für Backend-Dependencies
