@@ -1,19 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomeView from "./views/HomeView";
-import EvaluationView from "./views/EvaluationView";
-import ChatView from "./views/ChatView";
 
-const App: React.FC = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomeView />} />
-        <Route path="/evaluate" element={<EvaluationView />} />
-        <Route path="/chat" element={<ChatView />} />
-      </Routes>
-    </Router>
-  );
+const HomeView: React.FC = () => {
+  return <h1>🏠 Home View</h1>;
 };
 
-export default App;
+export default HomeView;
